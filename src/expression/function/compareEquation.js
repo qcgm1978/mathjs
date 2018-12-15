@@ -51,6 +51,9 @@ function factory(type, config, load, typed) {
                 return false
             }
         },
+        'number, number'(left,right) {
+            return left===right
+        }
 
 
     })
